@@ -1,0 +1,46 @@
+.example-wrapper {
+  padding: 0 20px;
+
+  background-color: $color-bg-block;
+}
+
+.example__title {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 17px 0 25px;
+
+  @include section-title;
+}
+
+.example-container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.example__description-details {
+  color: $color-title;
+  border: 1px solid #cdcdcd;
+
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__description-details span {
+  color: $color-text;
+  background-color: $color-bg-block;
+
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__description-cost {
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-title;
+
+  font-family: $title-font;
+  line-height: 20px;
+}
