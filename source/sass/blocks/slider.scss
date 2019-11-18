@@ -5,3 +5,16 @@
 .slider__thin-cat {
   background: url("../img/after-mobile@1x.png") no-repeat;
 }
+
+.slider__after,
+.slider__before {
+  text-transform: uppercase;
+
+  color: $color-title;
+  border: none;
+  background-color: inherit;
+
+  font-family: z$title-font;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,7 +1,9 @@
-.example-wrapper {
+.example__wrapper {
   padding: 0 20px;
 
   background-color: $color-bg-block;
+
+  @include mobile-center;
 }
 
 .example__title {
@@ -12,7 +14,7 @@
   @include section-title;
 }
 
-.example-container {
+.example__container {
   max-width: 320px;
   margin: 0 auto;
 }

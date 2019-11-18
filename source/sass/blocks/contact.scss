@@ -1,0 +1,30 @@
+.contact {
+  background-color: #ffffff;
+
+  &--catalog,
+  &--form {
+    background-color: $color-bg-block;
+  }
+}
+
+.contact__text {
+  display: flex;
+  justify-content: flex-start;
+
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 29px 19px 25px;
+}
+
+.contact__text-invitation {
+  display: block;
+
+  text-transform: uppercase;
+
+  color: $color-title;
+
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+}

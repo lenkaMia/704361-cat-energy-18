@@ -1,0 +1,11 @@
+.main-page__title {
+  display: block;
+
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-left: 20px;
+
+  @include section-title;
+  @include center;
+}

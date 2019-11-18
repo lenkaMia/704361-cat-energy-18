@@ -12,16 +12,17 @@
   margin-bottom: 22px;
 }
 
+.company-good__container {
+  margin-bottom: 22px;
+
+  @include mobile-center;
+}
+
 .company-goods__main-title {
-  color: #ffffff;
-
-  font-family: $title-font;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 60px;
-
   margin: 0;
   padding: 26px 0 27px;
+
+  @include section-title(#ffffff, 36px, 36px);
 }
 
 .company-goods__tagline {

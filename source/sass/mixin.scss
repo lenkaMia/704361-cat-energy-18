@@ -27,3 +27,8 @@
   font-weight: 400;
   line-height: $height;
 }
+
+@mixin center {
+  margin-right: auto;
+  margin-left: auto;
+}

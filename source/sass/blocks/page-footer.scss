@@ -6,4 +6,6 @@
 
 .page-footer__container {
   background: $color-bg-block;
+
+  @include mobile-center;
 }
