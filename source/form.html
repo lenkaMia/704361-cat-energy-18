@@ -4,14 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>CAT ENERGY.Функциональное питание для котов.</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="main-logo" href="#">
-      <img class="main-logo__image" src="#" width="190" height="40" alt="Логотип «CAT ENERGY»" />
-    </a>
-    <button class="nav-toggle" type="button"></button>
+    <div class="page-header__topline">
+      <a class="main-logo" href="#">
+        <img class="main-logo__image" src="img/logo-mobile.svg" width="190" height="40" alt="Логотип «CAT ENERGY»" />
+      </a>
+      <button class="nav-toggle nav-toggle--closed" type="button"></button>
+    </div>
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
@@ -46,25 +49,27 @@
             <input class="form__input-text" type="text" name="cat-age" id="cat-age" placeholder="7">
           </p>
         </div>
-        <fieldset class="form__programm">
-          <ul class="form__item">
-            <li>
-              <input class="form__hidden-control" type="radio" name="program" id="lose" value="lose" checked />
-              <label class="form__label-radio" for="lose">Похудение
-              </label>
-            </li>
-            <li>
-              <input class="form__hidden-control" type="radio" name="program" id="gain" value="lose" />
-              <label class="form__label-radio" for="gain">Набор массы
-              </label>
-            </li>
-            <li>
-              <input class="form__hidden-control" type="radio" name="program" id="advise" value="lose" />
-              <label class="form__label-radio" for="advise">Не знаю (Нужен ваш совет)
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__about__wrapper">
+          <fieldset class="form__programm">
+            <ul class="form__item">
+              <li>
+                <input class="form__hidden-control" type="radio" name="program" id="lose" value="lose" checked />
+                <label class="form__label-radio" for="lose">Похудение
+                </label>
+              </li>
+              <li>
+                <input class="form__hidden-control" type="radio" name="program" id="gain" value="lose" />
+                <label class="form__label-radio" for="gain">Набор массы
+                </label>
+              </li>
+              <li>
+                <input class="form__hidden-control" type="radio" name="program" id="advise" value="lose" />
+                <label class="form__label-radio" for="advise">Не знаю (Нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
       </div>
       <div class="form__contact">
         <h2 class="form__title form__contact-title">Контактные данные (владельца кота)
@@ -120,7 +125,7 @@
     </form>
   </main>
   <footer class="page-footer">
-    <section class="contact">
+    <section class="contact contact--form">
       <h2 class="contact__title visually-hidden">Контакты</h2>
       <div class="contact__text">
         <p class="contact__text-invitation">
@@ -131,12 +136,12 @@
         </p>
       </div>
       <div class="contact__map">
-        <img class="contact__map-image" src="i#" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        <img class="contact__map-image" src="#" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
       </div>
     </section>
     <div class="page-footer__container">
       <a class="page-footer__logo footer-logo" href="#">
-        <img class="footer-logo__title" src="#" width="128" height="24" alt="CAT ENERGY">
+        <img class="footer-logo__title" src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

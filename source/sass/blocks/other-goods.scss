@@ -1,0 +1,29 @@
+.other-goods {
+  text-align: center;
+
+  border-top: 1px solid $color-border;
+}
+
+.other-goods__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.other-goods__title {
+  text-transform: uppercase;
+
+  color: $color-title;
+
+  font-family: $title-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.other-goods__button {
+  color: $color-text;
+  background-color: $color-bg-block;
+
+  font-size: 16px;
+  line-height: 20px;
+}

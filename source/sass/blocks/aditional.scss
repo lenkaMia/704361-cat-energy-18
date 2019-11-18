@@ -1,0 +1,11 @@
+.aditional__item-title {
+  text-align: left;
+  text-transform: uppercase;
+
+  @include section-title(#222222,16px,16px);
+}
+
+.aditional__cost {
+  text-align: right;
+  text-transform: uppercase;
+}

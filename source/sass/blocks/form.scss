@@ -1,0 +1,92 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 320px;
+
+  @include center;
+}
+
+.form__about-text {
+  text-transform: uppercase;
+
+  color: $color-title;
+
+  font-family: $title-font;
+}
+
+.form__detail {
+  text-transform: uppercase;
+
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__input-text {
+  text-transform: uppercase;
+
+  color: #444444;
+  border: 1px solid #e6e6e6;
+}
+
+.form__label-cat {
+  color: #222222;
+  min-width: 42px;
+  padding-top: 14px;
+}
+
+.form__cat-weight label {
+  min-width: 68px;
+  padding-top: 13px;
+}
+
+.form__cat-age label {
+  min-width: 101px;
+  padding-top: 12px;
+}
+
+.form__about__wrapper {
+  width: 100%;
+
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__complete-detail,
+.form__programm {
+  text-transform: uppercase;
+
+  border: none;
+
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__item {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form__label-complete {
+  padding-left: 38px;
+
+  color: #222222;
+}
+
+.form__contact {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.form__title {
+  color: $color-title;
+
+  font-family: $title-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}

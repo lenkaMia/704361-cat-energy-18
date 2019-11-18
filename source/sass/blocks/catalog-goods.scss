@@ -1,0 +1,18 @@
+.catalog-goods__wrapper {
+  text-align: center;
+}
+
+.catalog-goods__title {
+  @include section-title;
+}
+
+.catalog-goods__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-goods__other-goods {
+  border-bottom: 1px solid $color-border;
+}

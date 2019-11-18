@@ -1,0 +1,46 @@
+.company-goods__wrapper {
+  min-height: 480px;
+
+  text-align: center;
+
+  border-top: 1px solid $color-border;
+  background: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top, center;
+
+  margin: auto;
+  margin-bottom: 22px;
+}
+
+.company-good__container {
+  margin-bottom: 22px;
+
+  @include mobile-center;
+}
+
+.company-goods__main-title {
+  margin: 0;
+  padding: 26px 0 27px;
+
+  @include section-title(#ffffff, 36px, 36px);
+}
+
+.company-goods__tagline {
+  margin: 0;
+  padding: 0 0 28px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  font-family: $title-font;
+  line-height: 14px;
+}
+
+.company-goods_button {
+  padding-top: 10px;
+}
+
+.company-goods__program {
+  @include mobile-center;
+}

@@ -1,0 +1,23 @@
+.button {
+  display: block;
+
+  max-width: 280px;
+  min-height: 40px;
+  margin: auto;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: $color-bg-btn;
+
+  font-family: $title-font;
+
+  &:hover {
+    background-color: $color-hv-btn;
+  }
+
+  &:active {
+    color: #81bd5d;
+  }
+}
