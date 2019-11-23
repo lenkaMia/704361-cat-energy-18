@@ -5,11 +5,15 @@
     text-align: center;
 
     &--open {
-    display: block;
+      display: block;
     }
 
     &--closed {
-    display: none;
+      display: none;
+    }
+
+    &--nojs {
+      display: block;
     }
   }
 }
