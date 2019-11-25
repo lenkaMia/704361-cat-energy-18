@@ -5,15 +5,10 @@
 }
 
 .specification__title {
-  color: #111111;
-
-  font-family: $title-font;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 60px;
-
   margin: 0 0 20px;
   padding: 0;
+
+  @include section-title;
 }
 
 .specification__list {
@@ -21,4 +16,261 @@
   padding: 0;
 
   list-style: none;
+
+  counter-reset: list;
+}
+
+.specification__item {
+  position: relative;
+
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-left: 80px;
+
+  &--leaf {
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      content: " ";
+
+      background: url("../img/advantage-leaf@1x.png") no-repeat, $color-bg-btn;
+      background-position: center;
+      background-size: 50px 50px, auto;
+    }
+  }
+
+  &--water {
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      content: " ";
+
+      background: url("../img/advantage-powder@1x.png") no-repeat, $color-bg-btn;
+      background-position: center;
+      background-size: 50px 50px, auto;
+    }
+  }
+
+  &--appliances {
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      content: " ";
+
+      background: url("../img/advantage-dining@1x.png") no-repeat, $color-bg-btn;
+      background-position: center, center;
+      background-size: 50px 50px, auto;
+    }
+  }
+
+  &--clock {
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+
+      width: 60px;
+      height: 60px;
+
+      content: " ";
+
+      background: url("../img/advantage-clock@1x.png") no-repeat, $color-bg-btn;
+      background-position: center;
+      background-size: 50px 50px, auto;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1299px) {
+  .specification__item {
+    &:nth-child(even) {
+      margin-bottom: 87px;
+      padding-right: 80px;
+      padding-left: 29px;
+
+      &::after {
+        left: 142px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .specification {
+    margin-bottom: 0;
+
+    @include tablet-center;
+  }
+
+  .specification__title {
+    padding-top: 33px;
+    padding-bottom: 53px;
+
+    @include section-title($color-title, 60px, 60px);
+  }
+
+  .specification__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .specification__item {
+    max-width: 50%;
+    min-height: 230px;
+    padding-top: 112px;
+    padding-right: 120px;
+    padding-left: 0;
+
+    @include tablet-fonts(16px, 24px);
+
+    &:last-child {
+      margin-bottom: 55px;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: -40px;
+      left: 115px;
+
+      content: counter(list);
+      counter-increment: list;
+
+      color: #f2f2f2;
+
+      font-family: $title-font;
+
+      @include tablet-fonts(281px, 281px);
+    }
+
+    &--leaf {
+      &::before {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        content: " ";
+
+        background-position: center;
+      }
+    }
+
+    &--water {
+      &::before {
+        top: 0;
+        left: 29px;
+
+        width: 80px;
+        height: 80px;
+
+        content: " ";
+
+        background-position: center;
+      }
+    }
+
+    &--appliances {
+      &::before {
+        top: 0;
+        left: 0;
+
+        width: 80px;
+        height: 80px;
+
+        content: " ";
+
+        background-position: center;
+      }
+    }
+
+    &--clock {
+      &::before {
+        top: 0;
+        left: 29px;
+
+        width: 80px;
+        height: 80px;
+
+        content: " ";
+
+        background-position: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .specification {
+    max-width: $desktop-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .specification__title {
+    margin-bottom: 0;
+    padding-top: 36px;
+    padding-left: 40px;
+  }
+
+  .specification__list {
+    display: flex;
+    justify-content: flex-start;
+
+    padding-left: 39px;
+  }
+
+  .specification__item {
+    max-width: 260px;
+    margin-top: 20px;
+    margin-right: 65px;
+    margin-bottom: 0;
+    padding-top: 112px;
+    padding-right: 0;
+
+    &::before {
+      left: 0;
+    }
+
+    &--appliances {
+      &::before {
+        top: 0;
+
+        background-position: center;
+      }
+    }
+
+    &--clock {
+      &::before {
+        top: 0;
+
+        background-position: center;
+      }
+    }
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
