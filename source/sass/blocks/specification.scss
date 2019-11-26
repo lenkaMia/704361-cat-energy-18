@@ -27,71 +27,45 @@
   padding-top: 10px;
   padding-left: 80px;
 
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    content: " ";
+
+    background-size: 50px 50px auto;
+  }
+
   &--leaf {
     &::before {
-      position: absolute;
-      top: 8px;
-      left: 0;
-
-      width: 60px;
-      height: 60px;
-
-      content: " ";
-
       background: url("../img/advantage-leaf@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
-      background-size: 50px 50px, auto;
     }
   }
 
   &--water {
     &::before {
-      position: absolute;
-      top: 8px;
-      left: 0;
-
-      width: 60px;
-      height: 60px;
-
-      content: " ";
-
       background: url("../img/advantage-powder@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
-      background-size: 50px 50px, auto;
     }
   }
 
   &--appliances {
     &::before {
-      position: absolute;
-      top: 8px;
-      left: 0;
-
-      width: 60px;
-      height: 60px;
-
-      content: " ";
-
       background: url("../img/advantage-dining@1x.png") no-repeat, $color-bg-btn;
-      background-position: center, center;
-      background-size: 50px 50px, auto;
+      background-position: center;
     }
   }
 
   &--clock {
     &::before {
-      position: absolute;
-      top: 8px;
-      left: 0;
-
-      width: 60px;
-      height: 60px;
-
-      content: " ";
-
       background: url("../img/advantage-clock@1x.png") no-repeat, $color-bg-btn;
       background-position: center;
-      background-size: 50px 50px, auto;
     }
   }
 }

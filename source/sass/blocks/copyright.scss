@@ -1,6 +1,36 @@
 .copyright__logo {
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 78px;
+  margin: auto -10px auto auto;
+  padding: 0;
+
   color: $color-text;
 
   font-size: 16px;
   line-height: 16px;
+
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__title {
+  margin: 0 0 0 -2px;
+  padding: 30px 0 0;
+}
+
+.copyright__image {
+  padding-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__title {
+    margin-right: 13px;
+  }
 }

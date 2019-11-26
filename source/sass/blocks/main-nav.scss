@@ -73,7 +73,7 @@
     }
   }
 
-  .main-nav a {
+  .main-nav__link {
     color: #222222;
 
     &:hover {
@@ -93,14 +93,14 @@
     @include tablet-fonts (20px, 25px);
   }
 
-  .main-nav a {
+  .main-nav__link {
     z-index: 15;
 
     color: #ffffff;
   }
 
-  .main-nav--catalog a,
-  .main-nav--form a {
+  .main-nav--catalog .main-nav__link ,
+  .main-nav--form .main-nav__link {
     color: $color-title;
   }
 
