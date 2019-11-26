@@ -94,3 +94,127 @@
     background: url("../img/icon-gift.svg") no-repeat;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .aditional-goods__title {
+    margin-top: 34px;
+    padding-bottom: 66px;
+    padding-left: calc((100% - 710px) / 2);
+
+    border-top: 3px solid $color-bg-btn;
+
+    @include section-title;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .aditional-goods__title span {
+    margin-top: -35px;
+    padding-right: 41px;
+    padding-left: 41px;
+
+    background-color: #ffffff;
+  }
+
+  .aditional-goods__wrapper {
+    width: $tablet-width;
+    padding-right: 30px;
+    padding-left: 34px;
+  }
+
+  .aditional-goods__item {
+    padding: 25px 37px 27px 38px;
+
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .aditional-goods__gift {
+    height: 200px;
+    margin-top: 70px;
+    margin-bottom: 74px;
+
+    background: url("../img/gift-photo-tablet@1x.jpg"), #62a639;
+  }
+
+  .aditional-goods__gift-text {
+    max-width: 165px;
+    padding: 70px 0 0 424px;
+
+    text-align: left;
+
+    &::before {
+      left: 118px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .aditional-goods {
+    margin-bottom: 179px;
+  }
+
+  .aditional-goods__title {
+    padding-bottom: 68px;
+    padding-left: calc((100% - 1300px) / 2);
+
+    border-top: 3px solid $color-bg-btn;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .aditional-goods__title span {
+    margin-top: -37px;
+    padding-right: 36px;
+    padding-left: 39px;
+  }
+
+  .aditional-goods__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: $desktop-width;
+    padding-right: 40px;
+    padding-left: 31px;
+  }
+
+  .aditional-goods__list {
+    width: 928px;
+  }
+
+  .aditional-goods__item {
+    display: flex;
+
+    height: 72px;
+
+    margin-right: 20px;
+    padding: 0 0 0 10px;
+
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .aditional-goods__gift {
+    height: 288px;
+    width: 245px;
+    margin: 0;
+
+    background: url("../img/gift-photo-desktop@1x.jpg"), #62a639;
+  }
+
+  .aditional-goods__gift-text {
+    max-width: 245px;
+    padding-top: 172px;
+    padding-right: 0;
+    padding-left: 0;
+
+    text-align: center;
+  }
+}
