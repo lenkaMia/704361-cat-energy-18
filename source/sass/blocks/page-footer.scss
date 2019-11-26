@@ -5,7 +5,85 @@
 }
 
 .page-footer__container {
+  position: relative;
+
   background: $color-bg-block;
 
   @include mobile-center;
+}
+
+.page-footer__logo {
+  display: block;
+
+  padding-top: 38px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid $color-border;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid $color-border;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet-center;
+  }
+
+  .page-footer__logo {
+    padding-top: 59px;
+    padding-bottom: 62px;
+    padding-left: 1px;
+
+    border-bottom: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .page-footer__social {
+    padding-top: 42px;
+    padding-bottom: 43px;
+
+    border-bottom: none;
+  }
+
+  .page-footer__copyright {
+    padding-top: 32px;
+    padding-right: 3px;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0;
+  }
+
+  .page-footer__container {
+    max-width: $desktop-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 40px;
+  }
+
+  .page-footer__logo {
+    padding-bottom: 59px;
+    padding-left: 0;
+  }
+
+  .page-footer__copyright {
+    padding-top: 37px;
+  }
 }

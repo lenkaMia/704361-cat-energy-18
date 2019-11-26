@@ -21,3 +21,9 @@
     color: #81bd5d;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    min-width: 245px;
+  }
+}

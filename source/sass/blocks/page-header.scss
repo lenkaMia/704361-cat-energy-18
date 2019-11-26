@@ -1,4 +1,4 @@
-.page-header {
+.page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -12,4 +12,35 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    @include tablet-center;
+  }
+
+  .page-header__topline {
+    display: block;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+    z-index: 2;
+
+    @include desktop-center;
+  }
+
+  .page-header__wrapper {
+    max-width: $desktop-width;
+    min-height: 140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 31px 0 0;
+  }
 }

@@ -32,3 +32,8 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+@mixin tablet-fonts ($size: 20px, $height: 20px) {
+  font-size: $size;
+  line-height: $height;
+}
