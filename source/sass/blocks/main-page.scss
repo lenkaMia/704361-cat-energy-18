@@ -1,3 +1,9 @@
+.main-page__wrapper {
+  margin-bottom: 29px;
+
+  border-top: 1px solid $color-border;
+}
+
 .main-page__title {
   display: block;
 
@@ -8,4 +14,31 @@
 
   @include section-title;
   @include center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page__wrapper {
+    margin-bottom: 72px;
+
+    border: none;
+  }
+  .main-page__title {
+    max-width: $tablet-width;
+    padding-top: 47px;
+    padding-left: 30px;
+
+    @include section-title($color-title, 60px, 60px);
+    @include center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page__wrapper {
+    margin-bottom: 175px;
+  }
+
+  .main-page__title {
+    max-width: $desktop-width;
+    padding-left: 40px;
+  }
 }

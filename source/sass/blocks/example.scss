@@ -13,8 +13,9 @@
 }
 
 .example__container {
-  max-width: 320px;
-  margin: 0 auto;
+  padding: 0;
+
+  @include mobile-center;
 }
 
 .example__description-text {
@@ -88,7 +89,7 @@
 
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
     background-position: bottom;
-    background-size: 100% 460px;
+    background-size: auto 463px;
   }
 
   .example__title {
@@ -144,7 +145,7 @@
     @include tablet-fonts(20px,28px);
   }
 
-  .example__description__wrapper {
+  .example__description-wrapper {
     margin-bottom: 55px;
   }
 }
@@ -156,16 +157,15 @@
     border-top: none;
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
     background-position: bottom;
-    background-size: 100% 463px;
+    background-size: auto 463px;
   }
 
   .example__wrapper {
-    margin-bottom: 93px;
     padding: 0;
 
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%) no-repeat;
     background-position: calc(50% + 325px) bottom;
-    background-size: 100% 463px;
+    background-size: auto 463px;
   }
 
   .example__title {
@@ -178,7 +178,7 @@
 
   .example__container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     max-width: 1300px;
     margin-top: -180px;
@@ -205,7 +205,7 @@
     padding-top: 16px;
   }
 
-  .example__description__wrapper {
+  .example__description-wrapper {
     justify-content: flex-start;
 
     padding-left: 40px;
