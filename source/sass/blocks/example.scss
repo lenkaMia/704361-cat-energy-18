@@ -144,7 +144,7 @@
     @include tablet-fonts(20px,28px);
   }
 
-  .example__description__wrapper {
+  .example__description-wrapper {
     margin-bottom: 55px;
   }
 }
@@ -205,9 +205,10 @@
     padding-top: 16px;
   }
 
-  .example__description__wrapper {
+  .example__description-wrapper {
     justify-content: flex-start;
 
+    margin-bottom: 0;
     padding-left: 40px;
   }
 
