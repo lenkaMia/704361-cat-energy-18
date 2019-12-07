@@ -60,6 +60,35 @@
   &:focus {
     border: 1px solid #cdcdcd;
   }
+
+  &--error {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &--error + .form__svg-phone {
+    fill: #ff8282;
+  }
+
+  &--error + .form__svg-mail {
+    fill: #ff8282;
+  }
+
+  &:active + .form__svg-phone {
+    fill: #68b738;
+  }
+
+  &:focus + .form__svg-phone {
+    fill: #68b738;
+  }
+
+  &:active + .form__svg-mail {
+    fill: #68b738;
+  }
+
+  &:focus + .form__svg-mail {
+    fill: #68b738;
+  }
 }
 
 .form__input-text::placeholder {
@@ -215,8 +244,20 @@
   position: relative;
 }
 
+.form__svg-mail {
+  position: absolute;
+  top: 16px;
+  right: 36px;
+}
+
 .form__contact-phone {
   position: relative;
+}
+
+.form__svg-phone {
+  position: absolute;
+  top: 12px;
+  right: 32px;
 }
 
 .form__comment {
@@ -451,6 +492,11 @@
     width: 85px;
   }
 
+  .form__svg-mail {
+    top: 20px;
+    right: 85px;
+  }
+
   .form__contact-phone {
     padding-left: 68px;
   }
@@ -459,11 +505,16 @@
     width: 111px;
   }
 
+  .form__svg-phone {
+    top: 18px;
+    right: 83px;
+  }
+
   .form__contact {
     margin-bottom: 86px;
   }
 
-  .orm__input-text--comment {
+  .form__input-text--comment {
     height: 174px;
   }
 
@@ -632,9 +683,17 @@
     padding-left: 15px;
   }
 
+  .form__svg-mail {
+    right: 60px;
+  }
+
   .form__contact-phone {
     padding-right: 0;
     padding-left: 40px;
+  }
+
+  .form__svg-phone {
+    right: 20px;
   }
 
   .form__contact {
