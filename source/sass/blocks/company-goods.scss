@@ -44,9 +44,9 @@
 }
 
 .company-goods__program {
-
   @include mobile-center;
 }
+
 @media (min-width: $tablet-width) {
   .company-goods__wrapper {
     margin-bottom: -3px;
@@ -100,10 +100,10 @@
   }
 
   .company-goods__program {
-
     @include tablet-center;
   }
 }
+
 @media (min-width: $desktop-width) {
   .company-goods {
     z-index: -1;
@@ -177,6 +177,7 @@
     padding: 0;
   }
 }
+
 @media (min-width: 1440px) {
   .company-goods__wrapper {
     background-position: calc(50% + 360px), center;
