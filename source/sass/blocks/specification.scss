@@ -70,6 +70,42 @@
   }
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .specification__item {
+    &--sheet {
+      &::before {
+        background: url("../img/advantage-leaf@2x.png") no-repeat, $color-bg-btn;
+        background-position: center;
+        background-size: 50px 50px, auto;
+      }
+    }
+
+    &--water {
+      &::before {
+        background: url("../img/advantage-powder@2x.png") no-repeat, $color-bg-btn;
+        background-position: center;
+        background-size: 50px 50px, auto;
+      }
+    }
+
+    &--appliances {
+      &::before {
+        background: url("../img/advantage-dining@2x.png") no-repeat, $color-bg-btn;
+        background-position: center;
+        background-size: 50px 50px, auto;
+      }
+    }
+
+    &--clock {
+      &::before {
+        background: url("../img/advantage-clock@2x.png") no-repeat, $color-bg-btn;
+        background-position: center;
+        background-size: 50px 50px, auto;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1299px) {
   .specification__item {
     &:nth-child(even) {

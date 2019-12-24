@@ -33,8 +33,11 @@
 .company-goods__tagline {
   margin: 0;
   padding: 0 0 28px;
+
   text-transform: uppercase;
+
   color: #ffffff;
+
   font-family: $title-font;
   line-height: 14px;
 }
@@ -50,6 +53,7 @@
 @media (min-width: $tablet-width) {
   .company-goods__wrapper {
     margin-bottom: -3px;
+
     border-top: none;
     background: #ffffff;
     background-image: none;
@@ -57,7 +61,9 @@
 
   .company-goods__container {
     position: relative;
+
     margin-bottom: 0;
+
     text-align: center;
 
     @include tablet-center;
@@ -68,6 +74,7 @@
     padding-top: 47px;
     padding-bottom: 43px;
     padding-left: 87px;
+
     text-align: left;
 
     @include section-title($color-title, 60px, 60px);
@@ -76,9 +83,12 @@
   .company-goods__tagline {
     padding-bottom: 18px;
     padding-left: 89px;
+
     text-align: left;
     text-transform: uppercase;
+
     color: $color-title;
+
     font-family: $title-font;
 
     @include tablet-fonts;
@@ -93,6 +103,7 @@
     position: absolute;
     top: 275px;
     left: 118px;
+
     height: 52px;
     padding-top: 17px;
 
@@ -107,6 +118,7 @@
 @media (min-width: $desktop-width) {
   .company-goods {
     z-index: -1;
+
     margin-top: -140px;
     margin-right: auto;
     margin-left: auto;
@@ -134,6 +146,7 @@
 
   .company-goods__container {
     position: relative;
+
     max-width: 1300px;
     min-height: 695px;
     margin-bottom: 83px;
@@ -143,6 +156,7 @@
 
   .company-goods__main-title {
     z-index: -15;
+
     max-width: 500px;
     padding-top: 222px;
     padding-left: 80px;
@@ -157,14 +171,17 @@
     position: absolute;
     top: 142px;
     left: calc(50%);
+
     width: auto;
     height: 499px;
+
     transform: translate(-160px);
   }
 
   .company-goods__button {
     position: relative;
     top: 0;
+
     max-width: 245px;
     height: 55px;
     margin-left: -40px;

@@ -54,15 +54,15 @@
           <div class="form__cat">
             <p class="form__cat-name form__detail">
               <label class="form__label-cat" for="cat-name">Имя:*</label>
-              <input class="form__input-text" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК">
+              <input class="form__input-text form__name" type="text" name="cat-name" id="cat-name" placeholder="БАРСИК">
             </p>
             <p class="form__cat-weight form__detail">
               <label class="form__label-cat" for="cat-weight">Вес (кг):*</label>
-              <input class="form__input-text" type="text" name="cat-weight" id="cat-weight" placeholder="7">
+              <input class="form__input-text form__weight" type="text" name="cat-weight" id="cat-weight" placeholder="7">
             </p>
             <p class="form__cat-age form__detail">
               <label class="form__label-cat" for="cat-age">Возраст (лет):</label>
-              <input class="form__input-text" type="text" name="cat-age" id="cat-age" placeholder="7">
+              <input class="form__input-text form__age" type="text" name="cat-age" id="cat-age" placeholder="7">
             </p>
           </div>
           <div class="form__about-wrapper">
@@ -93,14 +93,14 @@
           <div class="form__contact-container">
             <p class="form__contact-email form__detail">
               <label class="form__label-contact" for="email">E-mail:*</label>
-              <input class="form__input-text form__input-text--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              <input class="form__input-text form__input-text--email form__email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
               <svg class="form__svg-mail" width="17" height="13" viewBox="0 0 17 13" fill="#666666">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </p>
             <p class="form__contact-phone form__detail">
               <label class="form__label-contact" for="number">Телефон:*</label>
-              <input class="form__input-text form__input-text--phone" type="tel" name="number" id="number" placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" />
+              <input class="form__input-text form__input-text--phone form__phone" type="tel" name="number" id="number" placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" />
               <svg class="form__svg-phone" width="20" height="20" viewBox="0 0 20 20" fill="#666666">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -152,12 +152,14 @@
         <p class="contact__text-invitation">
           приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
-        <p class="contact__text-adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+        <div class="contact__text-wrapper">
+          <p class="contact__text-adress">
+            ул. Большая Конюшенная, д. 19/8 </p>
+          <p class="contact__text-city">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="contact__map">
-        <img class="contact__map-image" src="#" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        <img class="contact__map-point" src="img/map-pin.png" width="62" height="52" alt="Мы находимся здесь">
       </div>
     </section>
     <div class="page-footer__container">
