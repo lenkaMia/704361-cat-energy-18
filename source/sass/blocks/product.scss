@@ -6,8 +6,6 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 18px;
-
-  border-top: 1px solid $color-border;
 }
 
 .product__item-image {
@@ -68,7 +66,7 @@
 
     width: 100%;
     max-width: 324px;
-    min-height: 510px;
+    min-height: 512px;
     margin: 0 auto 60px;
     margin-bottom: 59px;
     padding: 0 0 0 2px;
@@ -85,6 +83,10 @@
   .product__image {
     width: 324px;
     height: auto;
+  }
+
+  .product__image--small {
+    padding-top: 36px;
   }
 
   .product__title {
@@ -121,9 +123,9 @@
 
   .product__button {
     min-width: 250px;
-    margin-right: 38px;
-    margin-bottom: 37px;
-    margin-left: 38px;
+    margin-right: 36px;
+    margin-bottom: 40px;
+    margin-left: 36px;
   }
 }
 

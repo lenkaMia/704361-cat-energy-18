@@ -2,13 +2,14 @@
   display: table;
 
   width: 100%;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
 }
 
 .aditional__item-title {
   display: table-caption;
 
-  padding: 0 0 11px 2px;
+  padding: 0 0 4px 2px;
+  margin: 11px 0;
 
   text-align: left;
   text-transform: uppercase;
@@ -22,7 +23,7 @@
 }
 
 .aditional__pack {
-  margin-left: -1px;
+  margin-left: 1px;
   padding: 0;
 
   text-align: left;
@@ -47,13 +48,14 @@
     display: flex;
     justify-content: space-between;
 
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
 
   .aditional__item-title {
     display: block;
 
     max-width: 350px;
+    margin: 22px 0;
 
     font-size: 20px;
     line-height: 20px;
@@ -62,7 +64,7 @@
   .aditional__property-wrapper {
     display: flex;
 
-    padding-top: 22px;
+    padding-top: 25px;
   }
 
   .aditional__cost {
@@ -112,6 +114,6 @@
   .aditional__button {
     min-width: 245px;
     max-height: 40px;
-    margin-top: 14.5px;
+    margin-top: 15px;
   }
 }

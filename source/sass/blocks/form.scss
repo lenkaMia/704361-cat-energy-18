@@ -60,6 +60,35 @@
   &:focus {
     border: 1px solid #cdcdcd;
   }
+
+  &--error {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &--error + .form__svg-phone {
+    fill: #ff8282;
+  }
+
+  &--error + .form__svg-mail {
+    fill: #ff8282;
+  }
+
+  &:active + .form__svg-phone {
+    fill: #68b738;
+  }
+
+  &:focus + .form__svg-phone {
+    fill: #68b738;
+  }
+
+  &:active + .form__svg-mail {
+    fill: #68b738;
+  }
+
+  &:focus + .form__svg-mail {
+    fill: #68b738;
+  }
 }
 
 .form__input-text::placeholder {
@@ -170,7 +199,7 @@
 
 .form__contact {
   width: 100%;
-  margin-bottom: 27px;
+  margin-bottom: 41px;
 }
 
 .form__contact-container {
@@ -182,7 +211,7 @@
 .form__title {
   display: flex;
 
-  margin: 28px 0 0;
+  margin: 40px 0 0;
   padding: 0 0 34px calc((100% - 280px) / 2);
 
   color: $color-title;
@@ -192,18 +221,16 @@
   font-weight: 400;
   line-height: 24px;
 
-  &::after {
-    display: block;
+  border-top: 3px solid $color-bg-btn;
+}
 
-    width: 100%;
-    height: 3px;
-    margin-top: 14px;
-    margin-left: 20px;
+.form__title span {
+  margin-top: -15px;
+  margin-left: -20px;
+  padding-right: 22px;
+  padding-left: 20px;
 
-    content: "";
-
-    background-color: $color-bg-btn;
-  }
+  background-color: #ffffff;
 }
 
 .form__label-contact {
@@ -215,8 +242,20 @@
   position: relative;
 }
 
+.form__svg-mail {
+  position: absolute;
+  top: 16px;
+  right: 36px;
+}
+
 .form__contact-phone {
   position: relative;
+}
+
+.form__svg-phone {
+  position: absolute;
+  top: 12px;
+  right: 32px;
 }
 
 .form__comment {
@@ -243,11 +282,10 @@
 
 .form__complete {
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 
 .form__complete-title {
-  margin-top: 13px;
   padding-bottom: 13px;
 }
 
@@ -425,10 +463,9 @@
 
   .form__title span {
     margin-top: -37px;
+    margin-left: 0;
     padding-right: 41px;
     padding-left: 39px;
-
-    background-color: #ffffff;
   }
 
   .form__contact-title {
@@ -451,6 +488,11 @@
     width: 85px;
   }
 
+  .form__svg-mail {
+    top: 20px;
+    right: 85px;
+  }
+
   .form__contact-phone {
     padding-left: 68px;
   }
@@ -459,11 +501,16 @@
     width: 111px;
   }
 
+  .form__svg-phone {
+    top: 18px;
+    right: 83px;
+  }
+
   .form__contact {
     margin-bottom: 86px;
   }
 
-  .orm__input-text--comment {
+  .form__input-text--comment {
     height: 174px;
   }
 
@@ -632,9 +679,17 @@
     padding-left: 15px;
   }
 
+  .form__svg-mail {
+    right: 60px;
+  }
+
   .form__contact-phone {
     padding-right: 0;
     padding-left: 40px;
+  }
+
+  .form__svg-phone {
+    right: 20px;
   }
 
   .form__contact {
@@ -661,7 +716,7 @@
 
   .form__item-complete li {
     width: 225px;
-    margin-right: 40px;
+    margin-right: 60px;
     margin-left: 40px;
   }
 
@@ -678,7 +733,7 @@
     padding-left: 0;
   }
 
-  .form__label-complete {
+  .form__item label {
     padding-left: 57px;
   }
 
