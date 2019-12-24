@@ -199,7 +199,7 @@
 
 .form__contact {
   width: 100%;
-  margin-bottom: 27px;
+  margin-bottom: 41px;
 }
 
 .form__contact-container {
@@ -211,7 +211,7 @@
 .form__title {
   display: flex;
 
-  margin: 28px 0 0;
+  margin: 40px 0 0;
   padding: 0 0 34px calc((100% - 280px) / 2);
 
   color: $color-title;
@@ -221,18 +221,16 @@
   font-weight: 400;
   line-height: 24px;
 
-  &::after {
-    display: block;
+  border-top: 3px solid $color-bg-btn;
+}
 
-    width: 100%;
-    height: 3px;
-    margin-top: 14px;
-    margin-left: 20px;
+.form__title span {
+  margin-top: -15px;
+  margin-left: -20px;
+  padding-right: 22px;
+  padding-left: 20px;
 
-    content: "";
-
-    background-color: $color-bg-btn;
-  }
+  background-color: #ffffff;
 }
 
 .form__label-contact {
@@ -465,10 +463,9 @@
 
   .form__title span {
     margin-top: -37px;
+    margin-left: 0;
     padding-right: 41px;
     padding-left: 39px;
-
-    background-color: #ffffff;
   }
 
   .form__contact-title {
