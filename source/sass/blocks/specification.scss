@@ -72,7 +72,7 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .specification__item {
-    &--sheet {
+    &--leaf {
       &::before {
         background: url("../img/advantage-leaf@2x.png") no-repeat, $color-bg-btn;
         background-position: center;
