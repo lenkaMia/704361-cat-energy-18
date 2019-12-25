@@ -6,6 +6,7 @@
   <title>CAT ENERGY.Функциональное питание для котов.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -51,9 +52,9 @@
           <h1 class="company-goods__main-title">Функциональное питание для котов</h1>
           <p class="company-goods__tagline">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x">
-            <img class="company-goods__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Питание для кота" />
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="company-good__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Питание для кота">
           </picture>
           <a class="button company-goods__button" href="form.html">Подобрать программу</a>
         </div>
@@ -144,6 +145,10 @@
         </div>
       </div>
       <div class="contact__map">
+        <div class="contact__map-interaktiv">
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A79eb325a807aa5710698f9e455cd3006cc60b823950cbfd899fff7cffb1af6a5&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=trueamp;z-index=2"></script>
+        </div>
         <img class="contact__map-point" src="img/map-pin.png" width="62" height="52" alt="Мы находимся здесь">
       </div>
     </section>
