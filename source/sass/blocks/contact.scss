@@ -61,6 +61,12 @@
   background-size: 320px auto;
 }
 
+.contact__map-interaktiv {
+  position: relative;
+
+  z-index: 2;
+}
+
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .contact__map {
     background: url("../img/bg-map-mobile@2x.png") no-repeat, #f2f2f2;

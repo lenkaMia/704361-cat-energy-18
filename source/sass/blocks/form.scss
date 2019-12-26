@@ -226,13 +226,16 @@
 }
 
 .form__title span {
-  max-width: 225px;
   margin-top: -15px;
   margin-left: -20px;
   padding-right: 22px;
   padding-left: 20px;
 
   background-color: #ffffff;
+}
+
+.form__contact-title span {
+  max-width: 225px;
 }
 
 .form__label-contact {
@@ -278,6 +281,7 @@
 .form__input-text--comment {
   height: 150px;
   margin-left: 0;
+  padding-right: 10px;
 
   text-transform: uppercase;
 }
@@ -479,7 +483,7 @@
   }
 
   .form__contact-title span {
-    width: 593px;
+    max-width: none;
   }
 
   .form__detail label {
@@ -645,8 +649,7 @@
   }
 
   .form__title span {
-    width: 593px;
-    padding-right: 13px;
+    padding-right: 42px;
     padding-left: 38px;
   }
 
@@ -698,11 +701,6 @@
     margin-bottom: 68px;
   }
 
-  .form__comment-title span {
-    width: 265px;
-    padding-right: 20px;
-  }
-
   .form__comment-text {
     max-width: $desktop-width;
     padding-left: 40px;
@@ -710,10 +708,6 @@
 
   .form__comment {
     margin-bottom: 89px;
-  }
-
-  .form__complete-title span {
-    width: 295px;
   }
 
   .form__item-complete li {
