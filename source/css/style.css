@@ -430,6 +430,8 @@ a {
     min-width: 18px;
     min-height: 18px;
     background: url("../img/icon-close.svg") no-repeat; }
+  .nav-toggle--nojs {
+    display: none; }
 
 @media (min-width: 768px) {
   .nav-toggle {
@@ -1531,7 +1533,7 @@ a {
     padding-bottom: 43px;
     border-bottom: none; }
   .page-footer__copyright {
-    padding-top: 33px; }
+    padding-top: 38px; }
     .page-footer__copyright:active {
       opacity: 0.3; } }
 
@@ -1607,6 +1609,7 @@ a {
 
 .contact__map-interaktiv {
   position: relative;
+  height: 364px;
   z-index: 2; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1653,6 +1656,8 @@ a {
     background: url("../img/bg-map-tablet@1x.png") no-repeat, #f2f2f2;
     background-position: center top -7px;
     background-size: 767px auto; }
+  .contact__map-interaktiv {
+    height: 394px; }
   .contact__map-point {
     top: 144px;
     left: calc(50% - 62px);
@@ -1711,6 +1716,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
   padding: 0;
   padding-top: 20px;
@@ -2436,9 +2443,8 @@ a {
 
 .form__input-text {
   width: 100%;
+  min-height: 45px;
   margin-left: 8px;
-  padding-top: 12px;
-  padding-bottom: 13px;
   padding-left: 15px;
   padding-right: 35px;
   text-transform: uppercase;
@@ -2622,6 +2628,7 @@ a {
 .form__input-text--comment {
   height: 150px;
   margin-left: 0;
+  padding-top: 12px;
   padding-right: 10px;
   text-transform: uppercase; }
 
@@ -2707,8 +2714,7 @@ a {
     min-width: 124px;
     padding-top: 16px; }
   .form__input-text {
-    padding-top: 15px;
-    padding-bottom: 12px;
+    min-height: 51px;
     padding-left: 18px; }
   .form__about-wrapper {
     margin-right: 67px;
@@ -2748,7 +2754,7 @@ a {
     padding-right: 41px;
     padding-left: 39px; }
   .form__contact-title {
-    margin-top: 96px; }
+    margin-top: 98px; }
   .form__contact-container {
     max-width: 768px; }
   .form__contact-title span {
@@ -2768,7 +2774,7 @@ a {
     top: 18px;
     right: 83px; }
   .form__contact {
-    margin-bottom: 86px; }
+    margin-bottom: 88px; }
   .form__input-text--comment {
     height: 174px; }
   .form__comment {
@@ -2862,7 +2868,7 @@ a {
     padding-right: 42px;
     padding-left: 38px; }
   .form__contact-title {
-    margin-top: 88px; }
+    margin-top: 90px; }
   .form__contact-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2894,7 +2900,7 @@ a {
   .form__svg-phone {
     right: 20px; }
   .form__contact {
-    margin-bottom: 68px; }
+    margin-bottom: 70px; }
   .form__comment-text {
     max-width: 1300px;
     padding-left: 40px; }

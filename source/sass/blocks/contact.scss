@@ -64,6 +64,8 @@
 .contact__map-interaktiv {
   position: relative;
 
+  height: 364px;
+
   z-index: 2;
 }
 
@@ -132,6 +134,10 @@
     background: url("../img/bg-map-tablet@1x.png") no-repeat, #f2f2f2;
     background-position: center top -7px;
     background-size: 767px auto;
+  }
+
+  .contact__map-interaktiv {
+    height: 394px;
   }
 
   .contact__map-point {
