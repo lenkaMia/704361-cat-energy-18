@@ -37,7 +37,6 @@
 .aditional__button {
   min-width: 280px;
   margin-bottom: 18px;
-  padding-top: 11px;
 
   font-size: 16px;
   line-height: 20px;
@@ -86,6 +85,7 @@
     width: 285px;
     margin-top: -1px;
     margin-right: 40px;
+    margin-bottom: 0;
     padding-bottom: 0;
   }
 
@@ -113,7 +113,9 @@
 
   .aditional__button {
     min-width: 245px;
-    max-height: 40px;
     margin-top: 15px;
+    margin-bottom: 15px;
+
+    align-self: flex-start;
   }
 }

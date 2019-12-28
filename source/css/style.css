@@ -404,6 +404,7 @@ a {
   max-width: 280px;
   min-height: 40px;
   margin: auto;
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -2293,16 +2294,19 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 72px;
+    min-height: 72px;
     margin-right: 20px;
     padding: 0 0 0 10px;
     border: none;
     border-top: 1px solid #cdcdcd; }
   .aditional-goods__gift {
-    height: 288px;
+    min-height: 288px;
+    height: auto;
     width: 245px;
     margin: 0;
-    background: url("../img/gift-photo-desktop@1x.jpg"), #62a639; } }
+    background: url("../img/gift-photo-desktop@1x.jpg"), #62a639;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 @media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
   .aditional-goods__gift {
@@ -2354,7 +2358,6 @@ a {
 .aditional__button {
   min-width: 280px;
   margin-bottom: 18px;
-  padding-top: 11px;
   font-size: 16px;
   line-height: 20px; }
 
@@ -2391,6 +2394,7 @@ a {
     width: 285px;
     margin-top: -1px;
     margin-right: 40px;
+    margin-bottom: 0;
     padding-bottom: 0; }
   .aditional__property {
     margin-right: 38px;
@@ -2406,8 +2410,10 @@ a {
     text-align: left; }
   .aditional__button {
     min-width: 245px;
-    max-height: 40px;
-    margin-top: 15px; } }
+    margin-top: 15px;
+    margin-bottom: 15px;
+    -ms-flex-item-align: start;
+        align-self: flex-start; } }
 
 .form__about {
   display: -webkit-box;
@@ -2722,21 +2728,28 @@ a {
     border: 1px solid #d6d6d6; }
   .form__complete-detail,
   .form__programm {
-    padding: 33px 0 0 33px;
+    padding: 25px 0 0 25px;
     font-size: 20px;
     line-height: 20px; }
   .form__programm {
-    margin-bottom: 2px; }
+    padding: 24px 0 0 27px;
+    margin-bottom: 12px; }
   .form__programm-radio + .form__label-radio::before {
-    top: -3px;
-    left: -5px;
+    top: 2px;
+    left: 0px;
     width: 38px;
     height: 38px;
     border: 10px solid #ffffff; }
   .form__item label {
-    padding-left: 53px; }
+    display: inline-block;
+    padding-left: 59px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 15px; }
+  .form__item .form__label-complete {
+    padding-left: 50px; }
   .form__item li {
-    margin-bottom: 33px; }
+    margin-bottom: 13px; }
   .form__title {
     padding-bottom: 64px;
     padding-left: calc((100% - 708px) / 2);
@@ -2787,10 +2800,10 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-left: 44px; }
+    padding-left: 53px; }
   .form__item-complete li {
     width: 50%;
-    margin-bottom: 52px; }
+    margin-bottom: 30px; }
   .form__label-complete {
     padding-left: 51px; }
   .form__programm-checkbox + .form__label-complete::before {
@@ -2801,7 +2814,8 @@ a {
   .form__complete-title {
     padding-bottom: 20px; }
   .form__complete-detail {
-    max-width: 768px; }
+    max-width: 768px;
+    margin-bottom: 25px; }
   .form__end {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2817,11 +2831,13 @@ a {
   .form__button {
     width: 283px;
     max-width: none;
-    height: 52px;
+    min-height: 52px;
     margin-right: 30px;
     margin-bottom: 0;
     margin-left: auto;
     padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 20px;
     line-height: 20px; }
   .form__complete {
@@ -2861,7 +2877,7 @@ a {
     margin-bottom: 0; }
   .form__complete-detail,
   .form__programm {
-    padding: 32px 0 0 36px; }
+    padding: 23px 0 0 30px; }
   .form__title {
     padding-left: calc((100% - 1300px) / 2); }
   .form__title span {
@@ -2912,8 +2928,9 @@ a {
     margin-left: 40px; }
   .form__complete-detail {
     max-width: 1300px;
-    padding-top: 34px;
-    padding-left: 0; }
+    padding-top: 25px;
+    padding-left: 0;
+    margin-bottom: 29px; }
   .form__item-complete {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2921,12 +2938,16 @@ a {
     padding-right: 0;
     padding-left: 0; }
   .form__item label {
-    padding-left: 57px; }
+    padding-left: 57px;
+    display: inline-block;
+    padding: 10px 15px 10px 60px; }
+  .form__item .form__label-complete {
+    padding-left: 58px; }
   .form__programm-checkbox + .form__label-complete::before {
     top: -4px;
     left: 0; }
   .form__complete {
-    margin-bottom: 20px; }
+    margin-bottom: 8px; }
   .form__button {
     width: 570px;
     margin-right: 40px; }

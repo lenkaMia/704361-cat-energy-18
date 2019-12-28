@@ -193,7 +193,7 @@
   .aditional-goods__item {
     display: flex;
 
-    height: 72px;
+    min-height: 72px;
     margin-right: 20px;
     padding: 0 0 0 10px;
 
@@ -202,11 +202,14 @@
   }
 
   .aditional-goods__gift {
-    height: 288px;
+    min-height: 288px;
+    height: auto;
     width: 245px;
     margin: 0;
 
     background: url("../img/gift-photo-desktop@1x.jpg"), #62a639;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
