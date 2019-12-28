@@ -38,10 +38,10 @@
 
 .form__input-text {
   width: 100%;
+  min-height: 45px;
   margin-left: 8px;
-  padding-top: 12px;
-  padding-bottom: 13px;
   padding-left: 15px;
+  padding-right: 35px;
 
   text-transform: uppercase;
 
@@ -233,6 +233,10 @@
   background-color: #ffffff;
 }
 
+.form__contact-title span {
+  max-width: 225px;
+}
+
 .form__label-contact {
   width: 67px;
   padding-top: 12px;
@@ -276,6 +280,8 @@
 .form__input-text--comment {
   height: 150px;
   margin-left: 0;
+  padding-top: 12px;
+  padding-right: 10px;
 
   text-transform: uppercase;
 }
@@ -404,8 +410,7 @@
   }
 
   .form__input-text {
-    padding-top: 15px;
-    padding-bottom: 12px;
+    min-height: 51px;
     padding-left: 18px;
   }
 
@@ -418,20 +423,21 @@
 
   .form__complete-detail,
   .form__programm {
-    padding: 33px 0 0 33px;
+    padding: 25px 0 0 25px;
 
     font-size: 20px;
     line-height: 20px;
   }
 
   .form__programm {
-    margin-bottom: 2px;
+    padding: 24px 0 0 27px;
+    margin-bottom: 12px;
   }
 
   .form__programm-radio + .form__label-radio {
     &::before {
-      top: -3px;
-      left: -5px;
+      top: 2px;
+      left: 0;
 
       width: 38px;
       height: 38px;
@@ -441,11 +447,19 @@
   }
 
   .form__item label {
-    padding-left: 53px;
+    display: inline-block;
+    padding-left: 59px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+
+  .form__item .form__label-complete {
+    padding-left: 50px;
   }
 
   .form__item li {
-    margin-bottom: 33px;
+    margin-bottom: 13px;
   }
 
   .form__title {
@@ -469,7 +483,7 @@
   }
 
   .form__contact-title {
-    margin-top: 96px;
+    margin-top: 98px;
   }
 
   .form__contact-container {
@@ -477,7 +491,7 @@
   }
 
   .form__contact-title span {
-    width: 593px;
+    max-width: none;
   }
 
   .form__detail label {
@@ -507,7 +521,7 @@
   }
 
   .form__contact {
-    margin-bottom: 86px;
+    margin-bottom: 88px;
   }
 
   .form__input-text--comment {
@@ -526,12 +540,12 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding-left: 44px;
+    padding-left: 53px;
   }
 
   .form__item-complete li {
     width: 50%;
-    margin-bottom: 52px;
+    margin-bottom: 30px;
   }
 
   .form__label-complete {
@@ -554,6 +568,7 @@
 
   .form__complete-detail {
     max-width: 768px;
+    margin-bottom: 25px;
   }
 
   .form__end {
@@ -575,11 +590,13 @@
   .form__button {
     width: 283px;
     max-width: none;
-    height: 52px;
+    min-height: 52px;
     margin-right: 30px;
     margin-bottom: 0;
     margin-left: auto;
     padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
     font-size: 20px;
     line-height: 20px;
@@ -635,7 +652,7 @@
 
   .form__complete-detail,
   .form__programm {
-    padding: 32px 0 0 36px;
+    padding: 23px 0 0 30px;
   }
 
   .form__title {
@@ -643,13 +660,12 @@
   }
 
   .form__title span {
-    width: 593px;
-    padding-right: 13px;
+    padding-right: 42px;
     padding-left: 38px;
   }
 
   .form__contact-title {
-    margin-top: 88px;
+    margin-top: 90px;
   }
 
   .form__contact-container {
@@ -693,12 +709,7 @@
   }
 
   .form__contact {
-    margin-bottom: 68px;
-  }
-
-  .form__comment-title span {
-    width: 265px;
-    padding-right: 20px;
+    margin-bottom: 70px;
   }
 
   .form__comment-text {
@@ -710,10 +721,6 @@
     margin-bottom: 89px;
   }
 
-  .form__complete-title span {
-    width: 295px;
-  }
-
   .form__item-complete li {
     width: 225px;
     margin-right: 60px;
@@ -722,8 +729,9 @@
 
   .form__complete-detail {
     max-width: $desktop-width;
-    padding-top: 34px;
+    padding-top: 25px;
     padding-left: 0;
+    margin-bottom: 29px;
   }
 
   .form__item-complete {
@@ -734,7 +742,12 @@
   }
 
   .form__item label {
-    padding-left: 57px;
+    display: inline-block;
+    padding: 10px 15px 10px 60px;
+  }
+
+  .form__item .form__label-complete {
+    padding-left: 58px;
   }
 
   .form__programm-checkbox + .form__label-complete {
@@ -745,7 +758,7 @@
   }
 
   .form__complete {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   .form__button {
