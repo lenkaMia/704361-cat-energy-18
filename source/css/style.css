@@ -2486,7 +2486,7 @@ a {
     border: 1px solid #444444;
     -webkit-box-shadow: 0 0 0 1px #444444;
             box-shadow: 0 0 0 1px #444444;
-    outline: auto; }
+    outline: none; }
   .form__input-text--error {
     border: 1px solid #ff8282;
     -webkit-box-shadow: 0 0 0 1px #ff8282;
