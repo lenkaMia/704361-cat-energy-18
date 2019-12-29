@@ -349,9 +349,6 @@ body {
 a {
   text-decoration: none; }
 
-.link {
-  color: #111111; }
-
 .page-header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,6 +447,9 @@ a {
       display: none; }
     .main-nav--nojs {
       display: block; } }
+
+.main-nav__link {
+  color: #111111; }
 
 .main-nav__list {
   display: -webkit-box;
