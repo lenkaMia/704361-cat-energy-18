@@ -99,6 +99,7 @@
 
 .program__button {
   display: inline-block;
+  position: relative;
 
   margin: 0;
   padding: 20px 0 23px;
@@ -110,35 +111,45 @@
   font-weight: normal;
   line-height: 16px;
 
+  &::before {
+    position: absolute;
+    top: 26px;
+    right: -12px;
+
+    width: 6px;
+    height: 5px;
+
+    content: " ";
+
+    border: 5px solid #f2f2f2;
+
+    z-index: 1;
+  }
+
   &::after {
     display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: -37px;
 
-    width: 24px;
-    height: 11px;
+    width: 33px;
+    height: 12px;
     margin-left: 8px;
     padding-top: 12px;
 
     content: " ";
 
-    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
   }
 
   &:hover {
     &::after {
-      width: 33px;
-
-      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+      right: -44px;
     }
   }
 
   &:active {
     opacity: 0.3;
-
-    &::after {
-      width: 33px;
-
-      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
-    }
   }
 }
 
@@ -254,11 +265,20 @@
 
     @include tablet-fonts;
 
-    &::after {
-      margin-left: 18px;
-      padding-top: 18px;
+    &::before {
+      top: 24px;
+      right: -23px;
+    }
 
-      background-position: left;
+    &::after {
+      top: 24px;
+      right: -47px
+    }
+
+    &:hover {
+      &::after {
+        right: -55px;
+      }
     }
   }
 }

@@ -347,7 +347,9 @@ body {
   line-height: 18px; }
 
 a {
-  text-decoration: none;
+  text-decoration: none; }
+
+.link {
   color: #111111; }
 
 .page-header__wrapper {
@@ -765,6 +767,7 @@ a {
 
 .program__button {
   display: inline-block;
+  position: relative;
   margin: 0;
   padding: 20px 0 23px;
   text-transform: uppercase;
@@ -772,22 +775,30 @@ a {
   font-size: 16px;
   font-weight: normal;
   line-height: 16px; }
+  .program__button::before {
+    position: absolute;
+    top: 26px;
+    right: -12px;
+    width: 6px;
+    height: 5px;
+    content: " ";
+    border: 5px solid #f2f2f2;
+    z-index: 1; }
   .program__button::after {
     display: inline-block;
-    width: 24px;
-    height: 11px;
+    position: absolute;
+    top: 23px;
+    right: -37px;
+    width: 33px;
+    height: 12px;
     margin-left: 8px;
     padding-top: 12px;
     content: " ";
-    background: url("../img/icon-right-arrow-long.svg") no-repeat; }
-  .program__button:hover::after {
-    width: 33px;
     background: url("../img/icon-right-arrow-verylong.svg") no-repeat; }
+  .program__button:hover::after {
+    right: -44px; }
   .program__button:active {
     opacity: 0.3; }
-    .program__button:active::after {
-      width: 33px;
-      background: url("../img/icon-right-arrow-verylong.svg") no-repeat; }
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .program__item {
@@ -858,10 +869,14 @@ a {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px; }
+    .program__button::before {
+      top: 24px;
+      right: -23px; }
     .program__button::after {
-      margin-left: 18px;
-      padding-top: 18px;
-      background-position: left; } }
+      top: 24px;
+      right: -47px; }
+    .program__button:hover::after {
+      right: -55px; } }
 
 @media (min-width: 1300px) {
   .program__list {
@@ -1103,6 +1118,9 @@ a {
   border: 0;
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%); }
+
+.link {
+  color: #111111; }
 
 .example__wrapper {
   padding: 0 20px;
@@ -2463,7 +2481,10 @@ a {
     -webkit-box-shadow: 0 0 0 1px #444444;
             box-shadow: 0 0 0 1px #444444; }
   .form__input-text:focus {
-    border: 1px solid #cdcdcd; }
+    border: 1px solid #444444;
+    -webkit-box-shadow: 0 0 0 1px #444444;
+            box-shadow: 0 0 0 1px #444444;
+    outline: auto; }
   .form__input-text--error {
     border: 1px solid #ff8282;
     -webkit-box-shadow: 0 0 0 1px #ff8282;

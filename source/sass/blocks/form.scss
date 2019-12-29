@@ -58,7 +58,9 @@
   }
 
   &:focus {
-    border: 1px solid #cdcdcd;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+    outline: auto;
   }
 
   &--error {
