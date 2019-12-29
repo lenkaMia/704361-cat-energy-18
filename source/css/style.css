@@ -794,7 +794,9 @@ a {
     margin-left: 8px;
     padding-top: 12px;
     content: " ";
-    background: url("../img/icon-right-arrow-verylong.svg") no-repeat; }
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
   .program__button:hover::after {
     right: -44px; }
   .program__button:active {
